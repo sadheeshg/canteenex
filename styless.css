@@ -1,0 +1,74 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('https://images.unsplash.com/photo-1505935428862-770b6f24f629?q=80&w=2067&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D%27');
+    color: white;
+    text-align: center;
+}
+
+.header-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.header {
+    margin: 0;
+    font-size: 2.5em;
+    transition: transform 0.7s ease-in-out;
+    position: relative;
+    top: -100px; /* Start above the screen */
+    opacity: 0; /* Start invisible */
+    animation: slideDown 0.5s forwards; /* Animation to slide down */
+    background: rgba(0, 0, 0, 0.7); /* Translucent background */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+@keyframes slideDown {
+    to {
+        top: 0; /* End position */
+        opacity: 1; /* End visible */
+    }
+}
+
+.container {
+    padding: 20px;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.7); /* Translucent background */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.1); /* Slightly translucent card background */
+    border-radius: 10px;
+    margin: 15px;
+    padding: 20px;
+    width: calc(33.33% - 40px); /* Three cards in a row with margin */
+    box-sizing: border-box; /* Include padding and margin in width */
+    transition: transform 0.2s;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.card h2 {
+    margin: 15px 0;
+}
+
+.card button {
+    padding: 10px;
+    background-color: #ff5722;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.
+}
