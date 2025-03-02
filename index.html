@@ -1,0 +1,57 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gourmet Canteen</title>
+    <link rel="stylesheet" href="ind.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="hero">
+        <div class="overlay"></div>
+        <nav>
+            <div class="logo"> Canteenex</div>
+            <div class="nav-links">
+                <a href="login.html">Login</a>
+                <a href="signup.html" class="signup-btn">Sign Up</a>
+            </div>
+        </nav>
+        <div class="hero-content">
+            <h1>Delicious Meals, Delivered with Love</h1>
+            <p>Experience gourmet dining at your favorite canteen.</p>
+            <a href="signup.html" class="explore-btn">explore menu</a>
+        </div>
+    </div>
+    
+    <section class="info-section">
+        <h2>Why Choose Us?</h2>
+        <p>We offer a variety of healthy and delicious meals crafted by top chefs. Our ingredients are fresh, and our service is fast and friendly.</p>
+    </section>
+    
+    <div class="floating-windows">
+        <div class="floating-window" id="special-deals">
+            <h3>Special Deals</h3>
+            <p>Get exclusive discounts on our meal plans!</p>
+        </div>
+        <div class="floating-window" id="customer-reviews">
+            <h3>Customer Reviews</h3>
+            <p>See what our customers are saying about us!</p>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            setTimeout(() => {
+                document.getElementById("special-deals").classList.add("show");
+            }, 500);
+            
+            setTimeout(() => {
+                document.getElementById("customer-reviews").classList.add("show");
+            }, 1000);
+        });
+    </script>
+
+</body>
+</html>
