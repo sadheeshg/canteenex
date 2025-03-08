@@ -1,74 +1,98 @@
-body {
+* {
     margin: 0;
-    font-family: Arial, sans-serif;
-    background-image: url('https://images.unsplash.com/photo-1505935428862-770b6f24f629?q=80&w=2067&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D%27');
-    color: white;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-image: url('https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-position: center;
+    background-size: cover;
+    color: #101010;
     text-align: center;
 }
 
-.header-container {
-    position: relative;
-    overflow: hidden;
-}
-
-.header {
-    margin: 0;
-    font-size: 2.5em;
-    transition: transform 0.7s ease-in-out;
-    position: relative;
-    top: -100px; /* Start above the screen */
-    opacity: 0; /* Start invisible */
-    animation: slideDown 0.5s forwards; /* Animation to slide down */
-    background: rgba(0, 0, 0, 0.7); /* Translucent background */
-    padding: 20px;
-    border-radius: 10px;
-}
-
-@keyframes slideDown {
-    to {
-        top: 0; /* End position */
-        opacity: 1; /* End visible */
-    }
-}
-
 .container {
-    padding: 20px;
+    width: 90%;
+    margin: 0 auto;
 }
 
-.card-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    background: rgba(0, 0, 0, 0.7); /* Translucent background */
-    padding: 20px;
-    border-radius: 10px;
+header {
+    padding: 50px 0;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-bottom: 3px solid #e74c3c;
 }
 
-.card {
-    background: rgba(255, 255, 255, 0.1); /* Slightly translucent card background */
-    border-radius: 10px;
-    margin: 15px;
-    padding: 20px;
-    width: calc(33.33% - 40px); /* Three cards in a row with margin */
-    box-sizing: border-box; /* Include padding and margin in width */
-    transition: transform 0.2s;
+header h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 60px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #fff;
 }
 
-.card img {
+.menu {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 20px;
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 15px;
+    margin: 40px 0;
+}
+
+.menu-item {
+    background-color: rgba(42, 41, 41, 0.9);
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transform: scale(1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.menu-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+}
+
+.menu-item img {
     width: 100%;
-    border-radius: 10px;
+    height: 250px;
+    object-fit: cover;
 }
 
-.card h2 {
-    margin: 15px 0;
+.item-details {
+    padding: 20px;
+    text-align: left;
 }
 
-.card button {
-    padding: 10px;
-    background-color: #ff5722;
-    border: none;
-    border-radius: 5px;
+.house-button {
+    background-color: rgba(42, 41, 41, 0.1);
     color: white;
+    padding: 12px 25px;
+    font-size: 30px;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
     cursor: pointer;
-    transition: background-color 0.
+    transition: background-color 0.3s ease;
+}
+
+.house-button:hover {
+    background-color: #c0392b;
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    text-align: center;
+    padding: 30px 0;
+    margin-top: 50px;
+}
+
+footer p {
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
 }
