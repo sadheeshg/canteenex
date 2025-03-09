@@ -68,20 +68,21 @@ header h1 {
     text-align: left;
 }
 
-.house-button {
-    background-color: rgba(42, 41, 41, 0.1);
+
+.hostelmess-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1.0em;
     color: white;
-    padding: 12px 25px;
-    font-size: 30px;
-    font-weight: 600;
+    text-shadow: 2px 2px 15px rgba(0, 0, 0, 0.7);
     border: none;
     border-radius: 8px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
 }
 
-.house-button:hover {
-    background-color: #c0392b;
 }
 
 footer {
